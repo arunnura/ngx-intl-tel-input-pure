@@ -1,0 +1,47 @@
+/*****************************************************
+	Custom styling example bellow.
+*****************************************************/
+::ng-deep {
+  .country-dropdown {
+    border-radius: 0 0 6px 6px;
+    margin-top: -1px;
+  }
+
+  ngx-intl-tel-input-pure {
+    display: block;
+    width: 450px;
+    margin-bottom: 20px;
+    .iti {
+      display: block !important;
+    }
+  }
+
+  ngx-intl-tel-input-pure.ng-invalid.ng-touched input {
+    border: 1px solid #c0392b !important;
+  }
+
+  ngx-intl-tel-input-pure input:focus {
+    border-color: #3498db !important;
+  }
+
+  ngx-intl-tel-input-pure input::-webkit-input-placeholder {
+    color: #bac2c7;
+  }
+
+  ngx-intl-tel-input-pure input:-ms-input-placeholder {
+    color: #bac2c7;
+  }
+
+  ngx-intl-tel-input-pure input::-ms-input-placeholder {
+    color: #bac2c7;
+  }
+
+  ngx-intl-tel-input-pure input::placeholder {
+    color: #bac2c7;
+  }
+
+  ngx-intl-tel-input-pure input[disabled] {
+    background-color: #e5eaf1;
+  }
+
+}

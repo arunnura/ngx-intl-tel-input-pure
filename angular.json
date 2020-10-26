@@ -123,6 +123,50 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-workspace"
+    },
+    "ngx-intl-tel-input-pure": {
+      "projectType": "library",
+      "root": "projects/ngx-intl-tel-input-pure",
+      "sourceRoot": "projects/ngx-intl-tel-input-pure/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-intl-tel-input-pure/tsconfig.lib.json",
+            "project": "projects/ngx-intl-tel-input-pure/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-intl-tel-input-pure/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-intl-tel-input-pure/src/test.ts",
+            "tsConfig": "projects/ngx-intl-tel-input-pure/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-intl-tel-input-pure/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-intl-tel-input-pure/tsconfig.lib.json",
+              "projects/ngx-intl-tel-input-pure/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "my-workspace",
+  "cli": {
+    "analytics": false
+  }
 }

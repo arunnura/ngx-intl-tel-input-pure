@@ -1,0 +1,22 @@
+{
+  "name": "ngx-intl-tel-input-pure",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "8.x - 10.x",
+    "@angular/core": "8.x - 10.x",
+    "@angular/forms": "8.x - 10.x",
+    "@angular/cdk": "8.x - 10.x",
+    "google-libphonenumber": "^3.2.3"
+  },
+  "author": {
+    "name": "jefn76",
+    "email": "jefn76@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/google-libphonenumber": "^7.4.17"
+  }
+}
