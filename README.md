@@ -1,6 +1,6 @@
 # International Telephone Input for Angular (ngx-intl-tel-input-pure)
 
-A plugin base on [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber) without 'ngx-bootstrap' and 'intl-tel-input' dependency.
+A plugin base on [ngx-intl-tel-input](https://github.com/webcat12345/ngx-intl-tel-input) without 'ngx-bootstrap' and 'intl-tel-input' dependency.
 
 ## Installation
 
@@ -35,4 +35,4 @@ OR to '**src/styles.scss**'
 
 ### Usage
 
-More usages please go to [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber).
+More usages please go to [ngx-intl-tel-input](https://github.com/webcat12345/ngx-intl-tel-input).
