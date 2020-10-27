@@ -1,27 +1,38 @@
-# MyWorkspace
+# International Telephone Input for Angular (ngx-intl-tel-input-pure)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+A plugin base on [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber) without 'ngx-bootstrap' and 'intl-tel-input' dependency.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Install Dependencies
 
-## Code scaffolding
+`$ npm install google-libphonenumber @angular/cdk --save`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Add Dependency Style
 
-## Build
+Add _'@angular/cdk'_ style file:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`./node_modules/@angular/cdk/overlay-prebuilt.css`
 
-## Running unit tests
+to **angular.json** styles array:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```json
+"styles": [
+  "./node_modules/@angular/cdk/overlay-prebuilt.css",
+  "src/styles.css"
+],
+```
+OR to '**src/styles.scss**'
+```css
+@import '~@angular/cdk/overlay-prebuilt.css';
+```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Install This Library
 
-## Further help
+`$ npm install ngx-intl-tel-input-pure --save`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+###Usage
+
+More usages please go to [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber).
