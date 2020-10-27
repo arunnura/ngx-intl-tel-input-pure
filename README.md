@@ -33,6 +33,6 @@ OR to '**src/styles.scss**'
 `$ npm install ngx-intl-tel-input-pure --save`
 
 
-###Usage
+### Usage
 
 More usages please go to [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber).
