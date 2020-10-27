@@ -1,24 +1,38 @@
-# NgxIntlTelInputPure
+# International Telephone Input for Angular (ngx-intl-tel-input-pure)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+A plugin base on [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber) without 'ngx-bootstrap' and 'intl-tel-input' dependency.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ngx-intl-tel-input-pure` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-intl-tel-input-pure`.
-> Note: Don't forget to add `--project ngx-intl-tel-input-pure` or else it will be added to the default project in your `angular.json` file. 
+### Install Dependencies
 
-## Build
+`$ npm install google-libphonenumber @angular/cdk --save`
 
-Run `ng build ngx-intl-tel-input-pure` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Add Dependency Style
 
-## Publishing
+Add _'@angular/cdk'_ style file:
 
-After building your library with `ng build ngx-intl-tel-input-pure`, go to the dist folder `cd dist/ngx-intl-tel-input-pure` and run `npm publish`.
+`./node_modules/@angular/cdk/overlay-prebuilt.css`
 
-## Running unit tests
+to **angular.json** styles array:
 
-Run `ng test ngx-intl-tel-input-pure` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```json
+"styles": [
+  "./node_modules/@angular/cdk/overlay-prebuilt.css",
+  "src/styles.css"
+],
+```
+OR to '**src/styles.scss**'
+```css
+@import '~@angular/cdk/overlay-prebuilt.css';
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Install This Library
+
+`$ npm install ngx-intl-tel-input-pure --save`
+
+
+### Usage
+
+More usages please go to [ngx-intl-tel-input](https://github.com/ruimarinho/google-libphonenumber).

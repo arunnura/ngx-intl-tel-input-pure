@@ -17,7 +17,7 @@ import { NG_VALIDATORS, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { CountryCode } from './data/country-code';
 import { CountryISO } from './enums/country-iso.enum';
 import { SearchCountryField } from './enums/search-country-field.enum';
-import { phoneNumberValidator } from './ngx-intl-tel-input.validator';
+import { phoneNumberValidator } from './ngx-intl-tel-input-pure.validator';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 export interface ChangeData {
