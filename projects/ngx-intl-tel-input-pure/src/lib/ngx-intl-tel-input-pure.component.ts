@@ -75,8 +75,6 @@ export class NgxIntlTelInputPureComponent implements OnInit, OnChanges {
   @Input() phoneValidation = true;
   @Input() inputId = 'phone';
   @Input() separateDialCode = false;
-  @Input() disabledCountry = false;
-  @Input() disabledInput = false;
   separateDialCodeClass: string;
 
   dropdownVisible = false;
@@ -99,6 +97,7 @@ export class NgxIntlTelInputPureComponent implements OnInit, OnChanges {
   preferredCountriesInDropDown: Array<Country> = [];
   // Has to be 'any' to prevent a need to install @types/google-libphonenumber by the package user...
   phoneUtil: any = lpn.PhoneNumberUtil.getInstance();
+  disabled = false;
   errors: Array<any> = ['Phone number is required.'];
   countrySearchText = '';
 
@@ -450,6 +449,10 @@ export class NgxIntlTelInputPureComponent implements OnInit, OnChanges {
 
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
+  }
+
+  setDisabledState(isDisabled: boolean): void {
+    this.disabled = isDisabled;
   }
 
   writeValue(obj: any): void {

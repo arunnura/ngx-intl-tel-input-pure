@@ -1,7 +1,7 @@
 <div class="iti iti--allow-dropdown" [ngClass]="separateDialCodeClass">
   <div class="iti__flag-container" [class.open]="dropdownVisible"
-       (click)="!disabledCountry ? showDropdown() : false"
-       [ngClass]="{'disabled': disabledCountry}">
+       (click)="!disabled ? showDropdown() : false"
+       [ngClass]="{'disabled': disabled}">
     <div class="iti__selected-flag">
       <div class="iti__flag" [ngClass]="selectedCountry?.flagClass"></div>
       <div *ngIf="separateDialCode" class="selected-dial-code">+{{selectedCountry.dialCode}}</div>
@@ -16,7 +16,7 @@
          (keypress)="onInputKeyPress($event)"
          [(ngModel)]="phoneNumber"
          (ngModelChange)="onPhoneNumberChange()"
-         [disabled]="disabledInput"
+         [disabled]="disabled"
          [placeholder]="separateDialCodePlaceHolder(selectedCountry?.placeHolder || '')"
          [attr.maxLength]="maxLength"
          [attr.validation]="phoneValidation"
