@@ -3,6 +3,7 @@ import { CdkPortal } from '@angular/cdk/portal';
 import { Component, EventEmitter, HostListener, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'lib-custom-dropdown',
   template: `
     <ng-template cdk-portal>

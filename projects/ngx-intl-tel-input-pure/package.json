@@ -1,11 +1,11 @@
 {
-  "name": "ngx-intl-tel-input-pure",
-  "version": "0.0.6",
+  "name": "ngx-intl-tel-input-hanvika",
+  "version": "0.0.7",
   "peerDependencies": {
-    "@angular/common": "8.x - 10.x",
-    "@angular/core": "8.x - 10.x",
-    "@angular/forms": "8.x - 10.x",
-    "@angular/cdk": "8.x - 10.x",
+    "@angular/cdk": ">=17.0.0",
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0",
+    "@angular/forms": ">=17.0.0",
     "google-libphonenumber": "^3.2.3"
   },
   "author": {

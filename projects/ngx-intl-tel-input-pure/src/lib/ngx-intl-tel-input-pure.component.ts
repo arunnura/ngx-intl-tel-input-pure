@@ -41,6 +41,7 @@ export interface Country {
 }
 
 @Component({
+  standalone: false,
   // tslint:disable-next-line:component-selector
   selector: 'ngx-intl-tel-input-pure',
   templateUrl: './ngx-intl-tel-input-pure.component.html',
