@@ -6,7 +6,7 @@ import { Component, EventEmitter, HostListener, Input, Output, ViewChild } from 
   standalone: false,
   selector: 'lib-custom-dropdown',
   template: `
-    <ng-template cdk-portal>
+    <ng-template cdkPortal>
       <ng-content></ng-content>
     </ng-template>
   `,
